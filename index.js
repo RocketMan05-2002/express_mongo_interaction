@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
 app.use(express.json());
+const UserRouter = require("./routers/user.router");
 
 //connect
 mongoose.connect("mongodb://127.0.0.1:27017/nemb58")

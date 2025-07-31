@@ -1,6 +1,6 @@
 const express = require("express");
 const UserRouter = express();
-const UserModel = require("./models/User.model");
+const UserModel = require("../models/User.model");
 
 //1. get all users
 UserRouter.get("/all-users", async (req,res)=>{
